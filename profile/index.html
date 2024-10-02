@@ -1,17 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noroff FED2 JS2 CA</title>
+    <title>Profile Page</title>
     <script type="module" src="/src/app.js"></script>
   </head>
   <body>
     <h1>Profile</h1>
 
-    <form name="updateProfile">
-      <button>Update Profile</button>
-    </form>
+    <!-- Section to display user profile information -->
+    <section id="profile-info"></section>
+
+    <!-- Section for user actions like creating posts or updating profile -->
+    <div id="actions-section"></div>
+
+    <!-- Profile update form, initially hidden and shown when updating profile -->
+    <div id="update-profile-form" style="display: none">
+      <h2>Update Profile</h2>
+      <form id="profile-update-form">
+        <label for="avatar-url">Avatar URL:</label>
+        <input type="text" id="avatar-url" name="avatar" />
+
+        <label for="banner-url">Banner URL:</label>
+        <input type="text" id="banner-url" name="banner" />
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio"></textarea>
+
+        <button type="submit">Update Profile</button>
+        <button type="button" id="cancel-update-btn">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Section to display user posts -->
+    <section id="user-posts"></section>
   </body>
 </html>

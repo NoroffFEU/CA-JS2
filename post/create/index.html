@@ -1,16 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noroff FED2 JS2 CA</title>
-    <script type="module" src="/src/app.js"></script>
+    <script type="module" src="/src/app.js" defer></script>
   </head>
   <body>
     <h1>Create Post</h1>
 
-    <form name="createPost">
-      <button>Create Post</button>
+    <form id="create-post-form" name="createPost">
+      <div>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required />
+      </div>
+      <div>
+        <label for="body">Body:</label>
+        <textarea id="body" name="body" required></textarea>
+      </div>
+      <div>
+        <label for="tags">Tags:</label>
+        <input type="text" name="tags" id="tags" />
+      </div>
+      <div>
+        <label for="image">Image:</label>
+        <input type="text" name="image" id="image" />
+      </div>
+      <div>
+        <label for="imageAlt">Image Alt Text:</label>
+        <input type="text" name="imageAlt" id="imageAlt" />
+      </div>
+      <button type="submit">Create Post</button>
     </form>
   </body>
 </html>

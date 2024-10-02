@@ -1,22 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/public/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noroff FED2 JS2 CA</title>
+    <script type="module" src="/src/app.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
+  <body>
+    <h1>Home</h1>
+    <div id="nav-bar">
+      <a id="my-profile-link" class="link-btn">My Profile</a>
+      <a href="/auth/login/" class="link-btn">Login</a>
+      <a href="/auth/register/" class="link-btn">Register</a>
+      <a href="/post/create/" class="link-btn">Create Post</a>
+      <button id="logout-btn">Logout</button>
+    </div>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noroff FED2 JS2 CA</title>
-  <script type="module" src="/src/app.js"></script>
-</head>
-
-<body>
-  <img src="/images/noroff-logo.png" alt="Noroff Logo" />
-
-  <h1>Home</h1>
-
-  <a href="/profile/">My Profile</a>
-  <a href="/auth/login/">Login</a>
-  <a href="/auth/register/">Register</a>
-  <button>Logout</button>
-</body>
+    <!-- Posts container section -->
+    <section id="posts-container"></section>
+  </body>
 </html>
